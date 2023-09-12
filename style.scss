@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  background-color: #eaeaea;
+  border: 1px solid #FFC600;
+  text-align: center;
+  padding: 5px 15px;
+  p.instruction {
+    margin: 0;
+  }
+  h2#counter {
+    font-family: Arial, sans-serif;
+    font-size: 5em;
+    margin: 0;
+    color: #e0413d;
+    @media (min-width: 768px) {
+      font-size: 12em;
+    }
+  }
+  p.hits {
+    margin-bottom: 30px;
+  }
+  button {
+    padding: 7px 30px; 
+    margin: 20px 0 60px;
+    font-size: 1.2em;
+    font-weight: 700; 
+    display: inline-block; 
+    text-transform: uppercase;
+    background-color: #0D054C;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 3px solid #1d0f8c;
+    border-radius: 25px;
+  }
+}
+
+
