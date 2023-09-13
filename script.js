@@ -30,5 +30,14 @@ document.addEventListener('keyup', function (event) {
 resetButton.addEventListener('click', function () {
   spacebarCount = 0; // Reset the spacebar count to zero
   updateCounter(); // Update the counter on the page
-  location.reload();
+  // location.reload(); // uncomment this line if the counter does not work on local machine
+});
+
+// prevent spacebar from scrolling the web page (not exactly related to this tool but necessary when the tool page has a scrollbar)
+window.addEventListener("keydown", function (e) {
+  // Check if the pressed key is the spacebar (keyCode 32)
+  if (e.keyCode === 32) {
+    // Prevent the default scrolling behavior
+    e.preventDefault();
+  }
 });

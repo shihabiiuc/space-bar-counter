@@ -11,6 +11,7 @@
 }
 .container p.instruction {
   margin: 0;
+  font-size: 1.8em;
 }
 .container h2#counter {
   font-family: Arial, sans-serif;
